@@ -187,6 +187,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Name = "ManagerHomeForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ManagerForm";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -104,6 +104,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Name = "HomeForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DeveloperForm";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
