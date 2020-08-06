@@ -177,7 +177,7 @@ namespace HackathonFormProject
                 }
                 else if (!consultantName.Equals(""))
                 {
-                    string query = "SELECT (TotalClientCount) WHERE ConsultantName = '" + consultantName + "'";
+                    string query = "SELECT (TotalClientCount) FROM Published.FirmConsultantData WHERE ConsultantName = '" + consultantName + "'";
                     dataBaseAccess.readDatathroughAdapter(query, dataTable);
 
                     if (dataTable.Rows.Count == 1)
@@ -194,7 +194,7 @@ namespace HackathonFormProject
                 }
                 else if (!firmID.Equals(""))
                 {
-                    string query = "SELECT (TotalClientCount) WHERE FirmId = '" + firmID + "'";
+                    string query = "SELECT (TotalClientCount) FROM Published.FirmConsultantData WHERE FirmId = '" + firmID + "'";
                     dataBaseAccess.readDatathroughAdapter(query, dataTable);
 
                     if (dataTable.Rows.Count == 1)
@@ -211,7 +211,36 @@ namespace HackathonFormProject
                 }
                 else if (!firmGUID.Equals(""))
                 {
+                    string dummyQuery = "SELECT (FirmID) FROM Published.Firm WHERE FirmGUID = '" + firmGUID + "'";
+                    dataBaseAccess.readDatathroughAdapter(dummyQuery, dataTable);
 
+                    if (dataTable.Rows.Count == 1)
+                    {
+                        DataRow[] dummyData = dataTable.Select();
+                        string dummyID = dummyData[0]["FirmID"].ToString();
+
+                        dataBaseAccess.closeConn();
+                        dataTable = new DataTable();
+
+                        string query = "SELECT (TotalClientCount) FROM Published.FirmConsultantData WHERE FirmId = '" + dummyID + "'";
+                        dataBaseAccess.readDatathroughAdapter(query, dataTable);
+
+                        if (dataTable.Rows.Count == 1)
+                        {
+                            DataRow[] data = dataTable.Select();
+                            MessageBox.Show("Client Count: " + data[0]["TotalClientCount"].ToString());
+                            dataTable = new DataTable();
+                            dataBaseAccess.closeConn();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Firm GUID invalid");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Firm GUID invalid");
+                    }
                 }
             }
             else if (dataNeeded.Equals("Asset Count"))
@@ -226,7 +255,7 @@ namespace HackathonFormProject
                 }
                 else if (!consultantName.Equals(""))
                 {
-                    string query = "SELECT (TotalAssets) WHERE ConsultantName = '" + consultantName + "'";
+                    string query = "SELECT (TotalAssets) FROM Published.FirmConsultantData WHERE ConsultantName = '" + consultantName + "'";
                     dataBaseAccess.readDatathroughAdapter(query, dataTable);
 
                     if (dataTable.Rows.Count == 1)
@@ -243,11 +272,53 @@ namespace HackathonFormProject
                 }
                 else if (!firmID.Equals(""))
                 {
+                    string query = "SELECT (TotalAssets) FROM Published.FirmConsultantData WHERE FirmId = '" + firmID + "'";
+                    dataBaseAccess.readDatathroughAdapter(query, dataTable);
 
+                    if (dataTable.Rows.Count == 1)
+                    {
+                        DataRow[] data = dataTable.Select();
+                        MessageBox.Show("Asset Count: " + data[0]["TotalAssets"].ToString());
+                        dataTable = new DataTable();
+                        dataBaseAccess.closeConn();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Firm ID invalid");
+                    }
                 }
                 else if (!firmGUID.Equals(""))
                 {
+                    string dummyQuery = "SELECT (FirmID) FROM Published.Firm WHERE FirmGUID = '" + firmGUID + "'";
+                    dataBaseAccess.readDatathroughAdapter(dummyQuery, dataTable);
 
+                    if (dataTable.Rows.Count == 1)
+                    {
+                        DataRow[] dummyData = dataTable.Select();
+                        string dummyID = dummyData[0]["FirmID"].ToString();
+
+                        dataBaseAccess.closeConn();
+                        dataTable = new DataTable();
+
+                        string query = "SELECT (TotalClientCount) FROM Published.FirmConsultantData WHERE FirmId = '" + dummyID + "'";
+                        dataBaseAccess.readDatathroughAdapter(query, dataTable);
+
+                        if (dataTable.Rows.Count == 1)
+                        {
+                            DataRow[] data = dataTable.Select();
+                            MessageBox.Show("Asset Count: " + data[0]["TotalAssets"].ToString());
+                            dataTable = new DataTable();
+                            dataBaseAccess.closeConn();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Firm GUID invalid");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Firm GUID invalid");
+                    }
                 }
             }
         }
