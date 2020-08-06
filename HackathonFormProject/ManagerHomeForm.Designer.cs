@@ -31,14 +31,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnInvestorSubmit = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtConsultantFirmGUID = new System.Windows.Forms.TextBox();
+            this.txtManagerFirmGUID = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtConsultantFirmID = new System.Windows.Forms.TextBox();
+            this.txtManagerFirmID = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtConsultantFirmName = new System.Windows.Forms.TextBox();
+            this.txtManagerFirmName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.boxConsultantDataNeeded = new System.Windows.Forms.ComboBox();
+            this.boxManagerDataNeeded = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -54,12 +55,13 @@
             // btnInvestorSubmit
             // 
             this.btnInvestorSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInvestorSubmit.Location = new System.Drawing.Point(331, 363);
+            this.btnInvestorSubmit.Location = new System.Drawing.Point(455, 368);
             this.btnInvestorSubmit.Name = "btnInvestorSubmit";
             this.btnInvestorSubmit.Size = new System.Drawing.Size(100, 40);
             this.btnInvestorSubmit.TabIndex = 36;
             this.btnInvestorSubmit.Text = "Submit";
             this.btnInvestorSubmit.UseVisualStyleBackColor = true;
+            this.btnInvestorSubmit.Click += new System.EventHandler(this.btnInvestorSubmit_Click);
             // 
             // label7
             // 
@@ -71,13 +73,13 @@
             this.label7.TabIndex = 35;
             this.label7.Text = "Firm GUID:";
             // 
-            // txtConsultantFirmGUID
+            // txtManagerFirmGUID
             // 
-            this.txtConsultantFirmGUID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConsultantFirmGUID.Location = new System.Drawing.Point(243, 299);
-            this.txtConsultantFirmGUID.Name = "txtConsultantFirmGUID";
-            this.txtConsultantFirmGUID.Size = new System.Drawing.Size(360, 34);
-            this.txtConsultantFirmGUID.TabIndex = 34;
+            this.txtManagerFirmGUID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtManagerFirmGUID.Location = new System.Drawing.Point(243, 299);
+            this.txtManagerFirmGUID.Name = "txtManagerFirmGUID";
+            this.txtManagerFirmGUID.Size = new System.Drawing.Size(360, 34);
+            this.txtManagerFirmGUID.TabIndex = 34;
             // 
             // label6
             // 
@@ -89,55 +91,55 @@
             this.label6.TabIndex = 33;
             this.label6.Text = "Firm ID:";
             // 
-            // txtConsultantFirmID
+            // txtManagerFirmID
             // 
-            this.txtConsultantFirmID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConsultantFirmID.Location = new System.Drawing.Point(243, 259);
-            this.txtConsultantFirmID.Name = "txtConsultantFirmID";
-            this.txtConsultantFirmID.Size = new System.Drawing.Size(360, 34);
-            this.txtConsultantFirmID.TabIndex = 32;
+            this.txtManagerFirmID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtManagerFirmID.Location = new System.Drawing.Point(243, 259);
+            this.txtManagerFirmID.Name = "txtManagerFirmID";
+            this.txtManagerFirmID.Size = new System.Drawing.Size(360, 34);
+            this.txtManagerFirmID.TabIndex = 32;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(39, 224);
+            this.label5.Location = new System.Drawing.Point(88, 224);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(198, 29);
+            this.label5.Size = new System.Drawing.Size(149, 29);
             this.label5.TabIndex = 31;
-            this.label5.Text = "Manager Name:";
+            this.label5.Text = "Firm Name:";
             // 
-            // txtConsultantFirmName
+            // txtManagerFirmName
             // 
-            this.txtConsultantFirmName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConsultantFirmName.Location = new System.Drawing.Point(243, 219);
-            this.txtConsultantFirmName.Name = "txtConsultantFirmName";
-            this.txtConsultantFirmName.Size = new System.Drawing.Size(360, 34);
-            this.txtConsultantFirmName.TabIndex = 30;
+            this.txtManagerFirmName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtManagerFirmName.Location = new System.Drawing.Point(243, 219);
+            this.txtManagerFirmName.Name = "txtManagerFirmName";
+            this.txtManagerFirmName.Size = new System.Drawing.Size(360, 34);
+            this.txtManagerFirmName.TabIndex = 30;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(294, 172);
+            this.label4.Location = new System.Drawing.Point(238, 164);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(185, 29);
+            this.label4.Size = new System.Drawing.Size(346, 29);
             this.label4.TabIndex = 29;
-            this.label4.Text = "Known Values:";
+            this.label4.Text = "Known Values (choose one):";
             // 
-            // boxConsultantDataNeeded
+            // boxManagerDataNeeded
             // 
-            this.boxConsultantDataNeeded.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.boxConsultantDataNeeded.FormattingEnabled = true;
-            this.boxConsultantDataNeeded.Items.AddRange(new object[] {
+            this.boxManagerDataNeeded.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.boxManagerDataNeeded.FormattingEnabled = true;
+            this.boxManagerDataNeeded.Items.AddRange(new object[] {
             "Firm Name",
             "Firm ID",
             "Firm GUID",
             "Website"});
-            this.boxConsultantDataNeeded.Location = new System.Drawing.Point(243, 102);
-            this.boxConsultantDataNeeded.Name = "boxConsultantDataNeeded";
-            this.boxConsultantDataNeeded.Size = new System.Drawing.Size(360, 37);
-            this.boxConsultantDataNeeded.TabIndex = 28;
+            this.boxManagerDataNeeded.Location = new System.Drawing.Point(243, 102);
+            this.boxManagerDataNeeded.Name = "boxManagerDataNeeded";
+            this.boxManagerDataNeeded.Size = new System.Drawing.Size(360, 37);
+            this.boxManagerDataNeeded.TabIndex = 28;
             // 
             // label3
             // 
@@ -149,20 +151,32 @@
             this.label3.TabIndex = 27;
             this.label3.Text = "Data Needed:";
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(276, 368);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 40);
+            this.button1.TabIndex = 37;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // ManagerHomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnInvestorSubmit);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.txtConsultantFirmGUID);
+            this.Controls.Add(this.txtManagerFirmGUID);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.txtConsultantFirmID);
+            this.Controls.Add(this.txtManagerFirmID);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtConsultantFirmName);
+            this.Controls.Add(this.txtManagerFirmName);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.boxConsultantDataNeeded);
+            this.Controls.Add(this.boxManagerDataNeeded);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Name = "ManagerHomeForm";
@@ -177,13 +191,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnInvestorSubmit;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtConsultantFirmGUID;
+        private System.Windows.Forms.TextBox txtManagerFirmGUID;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtConsultantFirmID;
+        private System.Windows.Forms.TextBox txtManagerFirmID;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtConsultantFirmName;
+        private System.Windows.Forms.TextBox txtManagerFirmName;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox boxConsultantDataNeeded;
+        private System.Windows.Forms.ComboBox boxManagerDataNeeded;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button1;
     }
 }
