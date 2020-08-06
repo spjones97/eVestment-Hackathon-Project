@@ -80,9 +80,9 @@
             // btnInvestorSubmit
             // 
             this.btnInvestorSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInvestorSubmit.Location = new System.Drawing.Point(468, 368);
+            this.btnInvestorSubmit.Location = new System.Drawing.Point(458, 368);
             this.btnInvestorSubmit.Name = "btnInvestorSubmit";
-            this.btnInvestorSubmit.Size = new System.Drawing.Size(100, 40);
+            this.btnInvestorSubmit.Size = new System.Drawing.Size(114, 40);
             this.btnInvestorSubmit.TabIndex = 26;
             this.btnInvestorSubmit.Text = "Submit";
             this.btnInvestorSubmit.UseVisualStyleBackColor = true;
@@ -155,9 +155,9 @@
             // btnBack
             // 
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(277, 368);
+            this.btnBack.Location = new System.Drawing.Point(268, 368);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(99, 40);
+            this.btnBack.Size = new System.Drawing.Size(114, 40);
             this.btnBack.TabIndex = 27;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;

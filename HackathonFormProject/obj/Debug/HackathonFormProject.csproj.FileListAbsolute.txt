@@ -2,9 +2,12 @@ C:\Users\spejon\source\repos\HackathonFormProject\HackathonFormProject\bin\Debug
 C:\Users\spejon\source\repos\HackathonFormProject\HackathonFormProject\bin\Debug\HackathonFormProject.exe
 C:\Users\spejon\source\repos\HackathonFormProject\HackathonFormProject\bin\Debug\HackathonFormProject.pdb
 C:\Users\spejon\source\repos\HackathonFormProject\HackathonFormProject\obj\Debug\HackathonFormProject.csprojAssemblyReference.cache
-C:\Users\spejon\source\repos\HackathonFormProject\HackathonFormProject\obj\Debug\HackathonFormProject.DeveloperForm.resources
 C:\Users\spejon\source\repos\HackathonFormProject\HackathonFormProject\obj\Debug\HackathonFormProject.Properties.Resources.resources
 C:\Users\spejon\source\repos\HackathonFormProject\HackathonFormProject\obj\Debug\HackathonFormProject.csproj.GenerateResource.cache
 C:\Users\spejon\source\repos\HackathonFormProject\HackathonFormProject\obj\Debug\HackathonFormProject.csproj.CoreCompileInputs.cache
 C:\Users\spejon\source\repos\HackathonFormProject\HackathonFormProject\obj\Debug\HackathonFormProject.exe
 C:\Users\spejon\source\repos\HackathonFormProject\HackathonFormProject\obj\Debug\HackathonFormProject.pdb
+C:\Users\spejon\source\repos\HackathonFormProject\HackathonFormProject\obj\Debug\HackathonFormProject.ConsultantHomeForm.resources
+C:\Users\spejon\source\repos\HackathonFormProject\HackathonFormProject\obj\Debug\HackathonFormProject.HomeForm.resources
+C:\Users\spejon\source\repos\HackathonFormProject\HackathonFormProject\obj\Debug\HackathonFormProject.InvestorHomeForm.resources
+C:\Users\spejon\source\repos\HackathonFormProject\HackathonFormProject\obj\Debug\HackathonFormProject.ManagerHomeForm.resources

@@ -182,13 +182,13 @@ namespace HackathonFormProject
                 }
                 else if (!firmName.Equals(""))
                 {
-                    string query = "SELECT (IsDOL) FROM Published.Firm WHERE FirmName = '" + firmName + "'";
+                    string query = "SELECT (IsDOLInvestor) FROM Published.Firm WHERE FirmName = '" + firmName + "'";
                     dataBaseAccess.readDatathroughAdapter(query, dataTable);
 
                     if (dataTable.Rows.Count == 1)
                     {
                         DataRow[] data = dataTable.Select();
-                        if (data[0]["IsDOL"].Equals("1"))
+                        if (data[0]["IsDOLInvestor"].Equals("1"))
                         {
                             MessageBox.Show("This is a DOL Investor");
                         }
@@ -206,13 +206,13 @@ namespace HackathonFormProject
                 }
                 else if (!firmID.Equals(""))
                 {
-                    string query = "SELECT (IsDOL) FROM Published.Firm WHERE FirmID = '" + firmID + "'";
+                    string query = "SELECT (IsDOLInvestor) FROM Published.Firm WHERE FirmID = '" + firmID + "'";
                     dataBaseAccess.readDatathroughAdapter(query, dataTable);
 
                     if (dataTable.Rows.Count == 1)
                     {
                         DataRow[] data = dataTable.Select();
-                        if (data[0]["IsDOL"].Equals("1"))
+                        if (data[0]["IsDOLInvestor"].Equals("1"))
                         {
                             MessageBox.Show("This is a DOL Investor");
                         }
@@ -230,13 +230,13 @@ namespace HackathonFormProject
                 }
                 else if (!firmGUID.Equals(""))
                 {
-                    string query = "SELECT (IsDOL) FROM Published.Firm WHERE FirmGUID = '" + firmGUID + "'";
+                    string query = "SELECT (IsDOLInvestor) FROM Published.Firm WHERE FirmGUID = '" + firmGUID + "'";
                     dataBaseAccess.readDatathroughAdapter(query, dataTable);
 
                     if (dataTable.Rows.Count == 1)
                     {
                         DataRow[] data = dataTable.Select();
-                        if (data[0]["IsDOL"].Equals("1"))
+                        if (data[0]["IsDOLInvestor"].Equals("1"))
                         {
                             MessageBox.Show("This is a DOL Investor");
                         }

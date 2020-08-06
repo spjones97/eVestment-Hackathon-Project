@@ -39,7 +39,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.boxManagerDataNeeded = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -57,7 +57,7 @@
             this.btnInvestorSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInvestorSubmit.Location = new System.Drawing.Point(455, 368);
             this.btnInvestorSubmit.Name = "btnInvestorSubmit";
-            this.btnInvestorSubmit.Size = new System.Drawing.Size(100, 40);
+            this.btnInvestorSubmit.Size = new System.Drawing.Size(129, 40);
             this.btnInvestorSubmit.TabIndex = 36;
             this.btnInvestorSubmit.Text = "Submit";
             this.btnInvestorSubmit.UseVisualStyleBackColor = true;
@@ -151,23 +151,23 @@
             this.label3.TabIndex = 27;
             this.label3.Text = "Data Needed:";
             // 
-            // button1
+            // btnBack
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(276, 368);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 40);
-            this.button1.TabIndex = 37;
-            this.button1.Text = "Back";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(266, 368);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(129, 40);
+            this.btnBack.TabIndex = 37;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.button1_Click);
             // 
             // ManagerHomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnInvestorSubmit);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtManagerFirmGUID);
@@ -199,6 +199,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox boxManagerDataNeeded;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnBack;
     }
 }

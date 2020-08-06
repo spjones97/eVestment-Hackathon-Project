@@ -59,7 +59,7 @@
             this.btmNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btmNext.Location = new System.Drawing.Point(318, 305);
             this.btmNext.Name = "btmNext";
-            this.btmNext.Size = new System.Drawing.Size(105, 38);
+            this.btmNext.Size = new System.Drawing.Size(116, 38);
             this.btmNext.TabIndex = 6;
             this.btmNext.Text = "Next";
             this.btmNext.UseVisualStyleBackColor = true;
