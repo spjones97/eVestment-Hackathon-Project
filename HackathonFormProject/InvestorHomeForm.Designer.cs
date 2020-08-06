@@ -58,11 +58,11 @@
             this.boxInvestorDataNeeded.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boxInvestorDataNeeded.FormattingEnabled = true;
             this.boxInvestorDataNeeded.Items.AddRange(new object[] {
+            "Firm Name",
             "Firm ID",
             "Firm GUID",
-            "Firm Name",
-            "Is DOL",
-            "Firm Type ID"});
+            "Firm Type ID",
+            "Is DOL"});
             this.boxInvestorDataNeeded.Location = new System.Drawing.Point(233, 120);
             this.boxInvestorDataNeeded.Name = "boxInvestorDataNeeded";
             this.boxInvestorDataNeeded.Size = new System.Drawing.Size(360, 37);

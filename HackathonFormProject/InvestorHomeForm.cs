@@ -32,6 +32,52 @@ namespace HackathonFormProject
             {
                 MessageBox.Show("Please choose data needed.");
             }
+            else if (dataNeeded.Equals("Firm Name"))
+            {
+                string firmID = txtInvestorFirmID.Text;
+                string firmGUID = txtInvestorFirmGUID.Text;
+
+                if (firmID.Equals("") && firmGUID.Equals(""))
+                {
+                    MessageBox.Show("Please enter Firm ID or Firm GUID for this information");
+                }
+                else if (!firmID.Equals(""))
+                {
+                    string query = "SELECT (FirmName) FROM Published.Firm WHERE FirmID = '" + firmID + "'";
+                    dataBaseAccess.readDatathroughAdapter(query, dataTable);
+
+                    if (dataTable.Rows.Count == 1)
+                    {
+                        DataRow[] data = dataTable.Select();
+                        MessageBox.Show("Firm Name: " + data[0]["FirmName"].ToString() + " copied to clipboard");
+                        Clipboard.SetText(data[0]["FirmName"].ToString());
+                        dataTable = new DataTable();
+                        dataBaseAccess.closeConn();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Firm ID invalid");
+                    }
+                }
+                else if (!firmGUID.Equals(""))
+                {
+                    string query = "SELECT (FirmName) FROM Published.Firm WHERE FirmGUID = '" + firmGUID + "'";
+                    dataBaseAccess.readDatathroughAdapter(query, dataTable);
+
+                    if (dataTable.Rows.Count == 1)
+                    {
+                        DataRow[] data = dataTable.Select();
+                        MessageBox.Show("Firm Name: " + data[0]["FirmName"].ToString() + " copied to clipboard");
+                        Clipboard.SetText(data[0]["FirmName"].ToString());
+                        dataTable = new DataTable();
+                        dataBaseAccess.closeConn();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Firm GUID invalid");
+                    }
+                }
+            }
             else if (dataNeeded.Equals("Firm ID"))
             {
                 string firmName = txtInvestorFirmName.Text;
@@ -124,52 +170,6 @@ namespace HackathonFormProject
                     }
                 }
             }
-            else if (dataNeeded.Equals("Firm Name"))
-            {
-                string firmID = txtInvestorFirmID.Text;
-                string firmGUID = txtInvestorFirmGUID.Text;
-
-                if (firmID.Equals("") && firmGUID.Equals(""))
-                {
-                    MessageBox.Show("Please enter Firm ID or Firm GUID for this information");
-                }
-                else if (!firmID.Equals(""))
-                {
-                    string query = "SELECT (FirmName) FROM Published.Firm WHERE FirmID = '" + firmID + "'";
-                    dataBaseAccess.readDatathroughAdapter(query, dataTable);
-
-                    if (dataTable.Rows.Count == 1)
-                    {
-                        DataRow[] data = dataTable.Select();
-                        MessageBox.Show("Firm Name: " + data[0]["FirmName"].ToString() + " copied to clipboard");
-                        Clipboard.SetText(data[0]["FirmName"].ToString());
-                        dataTable = new DataTable();
-                        dataBaseAccess.closeConn();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Firm ID invalid");
-                    }
-                }
-                else if (!firmGUID.Equals(""))
-                {
-                    string query = "SELECT (FirmName) FROM Published.Firm WHERE FirmGUID = '" + firmGUID + "'";
-                    dataBaseAccess.readDatathroughAdapter(query, dataTable);
-
-                    if (dataTable.Rows.Count == 1)
-                    {
-                        DataRow[] data = dataTable.Select();
-                        MessageBox.Show("Firm Name: " + data[0]["FirmName"].ToString() + " copied to clipboard");
-                        Clipboard.SetText(data[0]["FirmName"].ToString());
-                        dataTable = new DataTable();
-                        dataBaseAccess.closeConn();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Firm GUID invalid");
-                    }
-                }
-            }
             else if (dataNeeded.Equals("Is DOL"))
             {
                 string firmName = txtInvestorFirmName.Text;
@@ -202,7 +202,7 @@ namespace HackathonFormProject
                     else
                     {
                         MessageBox.Show("Firm Name invalid");
-                    }    
+                    }
                 }
                 else if (!firmID.Equals(""))
                 {
