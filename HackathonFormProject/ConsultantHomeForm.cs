@@ -300,7 +300,7 @@ namespace HackathonFormProject
                         dataBaseAccess.closeConn();
                         dataTable = new DataTable();
 
-                        string query = "SELECT (TotalClientCount) FROM Published.FirmConsultantData WHERE FirmId = '" + dummyID + "'";
+                        string query = "SELECT (TotalAssets) FROM Published.FirmConsultantData WHERE FirmId = '" + dummyID + "'";
                         dataBaseAccess.readDatathroughAdapter(query, dataTable);
 
                         if (dataTable.Rows.Count == 1)
