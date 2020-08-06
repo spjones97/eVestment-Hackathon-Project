@@ -249,7 +249,7 @@ namespace HackathonFormProject
                 string firmID = txtConsultantFirmID.Text;
                 string firmGUID = txtConsultantFirmGUID.Text;
 
-                if (firmID.Equals("") && firmGUID.Equals(""))
+                if (consultantName.Equals("") && firmID.Equals("") && firmGUID.Equals(""))
                 {
                     MessageBox.Show("Please enter Firm ID or Firm GUID for this information");
                 }
