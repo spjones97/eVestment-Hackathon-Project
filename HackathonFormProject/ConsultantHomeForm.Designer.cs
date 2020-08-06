@@ -46,7 +46,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(235, 39);
+            this.label1.Location = new System.Drawing.Point(242, 39);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(323, 33);
             this.label1.TabIndex = 0;
@@ -62,7 +62,7 @@
             "Firm GUID",
             "Client Count",
             "Asset Count"});
-            this.boxConsultantDataNeeded.Location = new System.Drawing.Point(241, 108);
+            this.boxConsultantDataNeeded.Location = new System.Drawing.Point(248, 108);
             this.boxConsultantDataNeeded.Name = "boxConsultantDataNeeded";
             this.boxConsultantDataNeeded.Size = new System.Drawing.Size(360, 37);
             this.boxConsultantDataNeeded.TabIndex = 11;
@@ -80,7 +80,7 @@
             // btnInvestorSubmit
             // 
             this.btnInvestorSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInvestorSubmit.Location = new System.Drawing.Point(458, 368);
+            this.btnInvestorSubmit.Location = new System.Drawing.Point(465, 368);
             this.btnInvestorSubmit.Name = "btnInvestorSubmit";
             this.btnInvestorSubmit.Size = new System.Drawing.Size(114, 40);
             this.btnInvestorSubmit.TabIndex = 26;
@@ -101,7 +101,7 @@
             // txtConsultantFirmGUID
             // 
             this.txtConsultantFirmGUID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConsultantFirmGUID.Location = new System.Drawing.Point(241, 305);
+            this.txtConsultantFirmGUID.Location = new System.Drawing.Point(248, 305);
             this.txtConsultantFirmGUID.Name = "txtConsultantFirmGUID";
             this.txtConsultantFirmGUID.Size = new System.Drawing.Size(360, 34);
             this.txtConsultantFirmGUID.TabIndex = 24;
@@ -119,7 +119,7 @@
             // txtConsultantFirmID
             // 
             this.txtConsultantFirmID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConsultantFirmID.Location = new System.Drawing.Point(241, 265);
+            this.txtConsultantFirmID.Location = new System.Drawing.Point(248, 265);
             this.txtConsultantFirmID.Name = "txtConsultantFirmID";
             this.txtConsultantFirmID.Size = new System.Drawing.Size(360, 34);
             this.txtConsultantFirmID.TabIndex = 22;
@@ -137,7 +137,7 @@
             // txtConsultantName
             // 
             this.txtConsultantName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConsultantName.Location = new System.Drawing.Point(241, 225);
+            this.txtConsultantName.Location = new System.Drawing.Point(248, 225);
             this.txtConsultantName.Name = "txtConsultantName";
             this.txtConsultantName.Size = new System.Drawing.Size(360, 34);
             this.txtConsultantName.TabIndex = 20;
@@ -146,7 +146,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(236, 172);
+            this.label4.Location = new System.Drawing.Point(243, 172);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(346, 29);
             this.label4.TabIndex = 19;
@@ -155,7 +155,7 @@
             // btnBack
             // 
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(268, 368);
+            this.btnBack.Location = new System.Drawing.Point(275, 368);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(114, 40);
             this.btnBack.TabIndex = 27;
