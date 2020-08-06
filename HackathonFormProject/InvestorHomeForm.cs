@@ -271,8 +271,7 @@ namespace HackathonFormProject
                     if (dataTable.Rows.Count == 1)
                     {
                         DataRow[] data = dataTable.Select();
-                        MessageBox.Show("Firm Type ID: " + data[0]["FirmTypeID"].ToString() + " copied to clipboard");
-                        Clipboard.SetText(data[0]["FirmTypeID"].ToString());
+                        MessageBox.Show("Firm Type ID: " + data[0]["FirmTypeID"].ToString());
                         dataTable = new DataTable();
                         dataBaseAccess.closeConn();
                     }
@@ -289,8 +288,7 @@ namespace HackathonFormProject
                     if (dataTable.Rows.Count == 1)
                     {
                         DataRow[] data = dataTable.Select();
-                        MessageBox.Show("Firm Type ID: " + data[0]["FirmTypeID"].ToString() + " copied to clipboard");
-                        Clipboard.SetText(data[0]["FirmTypeID"].ToString());
+                        MessageBox.Show("Firm Type ID: " + data[0]["FirmTypeID"].ToString());
                         dataTable = new DataTable();
                         dataBaseAccess.closeConn();
                     }
@@ -307,8 +305,7 @@ namespace HackathonFormProject
                     if (dataTable.Rows.Count == 1)
                     {
                         DataRow[] data = dataTable.Select();
-                        MessageBox.Show("Firm Type ID: " + data[0]["FirmTypeID"].ToString() + " copied to clipboard");
-                        Clipboard.SetText(data[0]["FirmTypeID"].ToString());
+                        MessageBox.Show("Firm Type ID: " + data[0]["FirmTypeID"].ToString());
                         dataTable = new DataTable();
                         dataBaseAccess.closeConn();
                     }
